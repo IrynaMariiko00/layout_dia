@@ -1,24 +1,18 @@
 .button {
-  grid-column: span 2;
-  margin-top: 72px;
   padding: 0;
-  height: 50px;
-  width: 100%;
-  border-radius: 8px;
-  border: none;
-  background: linear-gradient(90deg, $accent-blue-color-gradient-l, $accent-blue-color-gradient-r);
-
-  @include on-tablet {
-   width: 264px;
-  }
-
-  @include hover (transform, scale(0.98));
-
-  &:active {
-    background: linear-gradient(90deg, $accent-blue-color-gradient-R, $accent-blue-color-gradient-r);
-  }
 
   &__text {
+    grid-column: span 2;
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(
+      90deg,
+      $accent-blue-color-gradient-l,
+      $accent-blue-color-gradient-r
+    );
+
     color: $header-footer-text-color;
     text-decoration: none;
     font-family: $poppins-font-family;
@@ -26,6 +20,25 @@
     font-weight: $font-weight-add;
     line-height: 22.5px;
     text-align: center;
+    cursor: pointer;
+
+    @include on-tablet {
+      width: 264px;
+    }
+
+    @include hover(transform, scale(0.98));
+
+    &:active {
+      background: linear-gradient(
+        90deg,
+        $accent-blue-color-gradient-R,
+        $accent-blue-color-gradient-r
+      );
+    }
+  }
+
+  &--learn {
+    margin-top: 72px;
   }
 
   &--vision {
@@ -33,7 +46,6 @@
   }
 
   &--send {
-    margin: 0;
+    margin-top: 0;
   }
 }
-

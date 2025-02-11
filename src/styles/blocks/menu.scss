@@ -10,6 +10,13 @@ overflow: hidden;
 height: 100%;
 z-index: 1000;
 
+&__container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  top: 15%;
+}
 
  &:target {
   opacity: 1;

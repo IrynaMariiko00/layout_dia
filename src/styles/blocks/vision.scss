@@ -40,7 +40,8 @@
     font-size: 22px;
     line-height: 33px;
     color: $main-add-color;
-    margin: 0;
+    margin-bottom: 64px;
+    margin-top: 0;
 
     @include on-tablet {
       max-width: 558px;
@@ -48,6 +49,10 @@
 
     @include on-small-desktop {
       max-width: 730px;
+    }
+
+    @include on-large-screen {
+      margin-bottom: 56px;
     }
   }
 }

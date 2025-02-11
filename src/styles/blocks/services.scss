@@ -117,7 +117,7 @@
       align-items: center;
       justify-content: center;
       border-radius: 23px;
-      background-color:rgba(32, 96, 246, 0.1);
+      background-color: rgba(32, 96, 246, 0.1);
       height: 24px;
       width: 46px;
     }
@@ -146,23 +146,33 @@
     }
 
     &-button {
-      background: linear-gradient(90deg, $accent-blue-color-gradient-l, $accent-blue-color-gradient-r);
+      background: linear-gradient(
+        90deg,
+        $accent-blue-color-gradient-l,
+        $accent-blue-color-gradient-r
+      );
       border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border-radius: 50%;
       width: 40px;
       height: 40px;
       margin-right: 16px;
       align-self: center;
 
-      @include hover (transform, scale(1.1));
+      @include hover(transform, scale(0.95));
 
       &:active {
-        background: linear-gradient(90deg, $accent-blue-color-gradient-R, $accent-blue-color-gradient-r);
+        background: linear-gradient(
+          90deg,
+          $accent-blue-color-gradient-R,
+          $accent-blue-color-gradient-r
+        );
       }
     }
 
     &-button-img {
-      padding-top: 3px;
       height: 16px;
       width: 16px;
     }
